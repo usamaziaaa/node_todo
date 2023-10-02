@@ -1,0 +1,22 @@
+{
+  "muneer": {
+    "username": "muneer",
+    "password": "$2b$10$VRg8cWVuY3BnGtqhttFqFuisQNpZNIInqSPhgJ2UIleAd/hfuPUea"
+  },
+  "sagar": {
+    "username": "sagar",
+    "password": "$2b$10$xcqcTX.M9bOELPM2m1AiN.sHpTNVtlO/aDN3HkcQx4eeOQxOUbb4m"
+  },
+  "usama": {
+    "username": "usama",
+    "password": "$2b$10$prE.Hk.o1gFpkbbDjhofx.kWKfWgs.Py4SAiDTuA0E00zlY73gR/y"
+  },
+  "imran": {
+    "username": "imran",
+    "password": "$2b$10$XUu8lr3TGgbIvlTi9W/E7e/eQP8WO0q4Ea4pZmHiDgjcACyKAkhhO"
+  },
+  "haris": {
+    "username": "haris",
+    "password": "$2b$10$eDz/aXQDeRyFFoBRvY9B5epBUqN.ninbVjgWInnUwkMqtHZx9.Fom"
+  }
+}
