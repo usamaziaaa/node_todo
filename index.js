@@ -1,5 +1,5 @@
 const express = require("express");
-const { user_signup, user_login } = require("./controllers/controller");
+const userRoutes = require("./routes/user");
 
 const app = express();
 
@@ -7,8 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.post("/signup", user_signup);
-app.post("/login", user_login);
+app.use("/", userRoutes);
 
 // Start the Express server
 const PORT = 3000;

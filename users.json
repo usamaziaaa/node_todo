@@ -18,5 +18,29 @@
   "haris": {
     "username": "haris",
     "password": "$2b$10$eDz/aXQDeRyFFoBRvY9B5epBUqN.ninbVjgWInnUwkMqtHZx9.Fom"
+  },
+  "areeb": {
+    "username": "areeb",
+    "password": "$2b$10$lTzaHt7hPZaa/DVRtZCd1u2MlyEOkGn8UD6d58IA76xH3KOeWQJ56"
+  },
+  "danish": {
+    "username": "danish",
+    "password": "$2b$10$VCoKTe.HS9S89YRk.B.PRumsdVol9gWbDjIhhMwl6ddxMqmJgdZBe"
+  },
+  "dasnish": {
+    "username": "dasnish",
+    "password": "$2b$10$mO5jVqHsYnPRm8K7dYSh..Stvfy.QwdO69ImfmpeNjajK7gQvGz2y"
+  },
+  "muneerahmed": {
+    "username": "muneerahmed",
+    "password": "$2b$10$XfLIbPx/Tz..J58wCe30A.WE2fhZYHGYRx0K4vhPJzm7pkklPECS."
+  },
+  "anas": {
+    "username": "anas",
+    "password": "$2b$10$GKgt.wrBsnNn9jdz6nyYKOhDZ7pp7OZnGx5p9srFjxuKh.FavZz0K"
+  },
+  "mohsin": {
+    "username": "mohsin",
+    "password": "$2b$10$xnu.O4IOg4D.nKWrDrXFUu5svvsr/ry21fA0bO/2w4nz5VJ2Nuur."
   }
 }
