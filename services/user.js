@@ -3,42 +3,44 @@ const { loadUsers, saveUsers } = require("../helpers/helper");
 const usersFilePath = "users.json";
 
 class User {
-  static signup(req, res) {
+  static async signup(user) {
     let users = loadUsers(usersFilePath);
-    const { username, password } = req.body;
+    const { username, password } = user;
 
     if (users[username]) {
-      return res.status(400).json({ error: "Username already exists" });
+      return { code: 400, error: "Username already exists" };
     }
 
-    bcrypt.hash(password, 10, (err, hash) => {
-      if (err) {
-        return res.status(500).json({ message: "Error hashing password" });
-      }
-
+    try {
+      const hash = await bcrypt.hash(password, 10);
       users[username] = { username, password: hash };
-
       saveUsers(usersFilePath, users);
-
-      res.status(201).json({ message: "User registered successfully" });
-    });
+      return { code: 201, message: "User registered successfully" };
+    } catch (error) {
+      console.error(error);
+      return { code: 500, error: "Error hashing password" };
+    }
   }
 
-  static login(req, res) {
+  static async login(user) {
     const users = loadUsers(usersFilePath);
-    const { username, password } = req.body;
+    const { username, password } = user;
 
     if (!users[username]) {
-      return res.status(401).json({ error: "User not found" });
+      return { code: 401, error: "User not found" };
     }
 
-    bcrypt.compare(password, users[username].password, (err, result) => {
-      if (err || !result) {
-        return res.status(401).json({ message: "Authentication failed" });
+    try {
+      const result = await bcrypt.compare(password, users[username].password);
+      if (result) {
+        return { code: 201, message: "Login successful" };
+      } else {
+        return { code: 401, message: "Authentication failed" };
       }
-
-      res.json({ message: "Login successful" });
-    });
+    } catch (error) {
+      console.error(error);
+      return { code: 500, message: "Bycrpt error" };
+    }
   }
 }
 

@@ -1,11 +1,15 @@
 const User = require("../services/user");
 
-const userSignup = (req, res) => {
-  User.signup(req, res);
+const userSignup = async (req, res) => {
+  const result = await User.signup(req.body);
+  console.log("result---",result)
+  res.status(result.code).json(result);
 };
 
-const userLogin = (req, res) => {
-  User.login(req, res);
+const userLogin =  async (req, res) => {
+  const result = await User.login(req.body);
+  console.log("result---", result)
+  res.status(result.code).json(result);
 };
 
 module.exports = {
