@@ -29,7 +29,7 @@ class User {
     const { username, password } = user;
 
     if (!users[username]) {
-      return { code: 401, error: "User not found" };
+      return { code: 401, error: "Sorry, User not found" };
     }
 
     try {
