@@ -9,7 +9,8 @@
   },
   "usama": {
     "username": "usama",
-    "password": "$2b$10$prE.Hk.o1gFpkbbDjhofx.kWKfWgs.Py4SAiDTuA0E00zlY73gR/y"
+    "password": "$2b$10$prE.Hk.o1gFpkbbDjhofx.kWKfWgs.Py4SAiDTuA0E00zlY73gR/y",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNhbWEiLCJwYXNzd29yZCI6IjEyMzQ1NiJ9LCJpYXQiOjE2OTY0ODcwMTEsImV4cCI6MTY5NjQ5MDYxMX0.98iuDcElvvg9_oZFS7K2gxnU-8npDWVMpcVJ2p4lptE"
   },
   "imran": {
     "username": "imran",

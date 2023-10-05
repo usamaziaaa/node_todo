@@ -1,6 +1,8 @@
 const bcrypt = require("bcrypt");
 const { loadUsers, saveUsers } = require("../helpers/helper");
 const usersFilePath = "users.json";
+const secretKey = "secretKey";
+const jwt = require("jsonwebtoken");
 
 class User {
   static async signup(user) {
@@ -33,7 +35,10 @@ class User {
     try {
       const result = await bcrypt.compare(password, users[username].password);
       if (result) {
-        return { code: 201, message: "Login successful" };
+        const token = jwt.sign({user}, secretKey, { expiresIn: '1h' });
+        users[username].token = token
+        saveUsers(usersFilePath, users);
+        return { code: 201, message: "Login successful", user: users[username] };
       } else {
         return { code: 401, message: "Authentication failed" };
       }
