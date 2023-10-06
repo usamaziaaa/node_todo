@@ -11,7 +11,7 @@
   "usama": {
     "username": "usama",
     "password": "$2b$10$prE.Hk.o1gFpkbbDjhofx.kWKfWgs.Py4SAiDTuA0E00zlY73gR/y",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNhbWEiLCJwYXNzd29yZCI6IjEyMzQ1NiJ9LCJpYXQiOjE2OTY1MTE1MDcsImV4cCI6MTY5NjUxNTEwN30.FFL2QYgaU0tymVZYb_8rr6u8mAVr_QKn1ccmeELGcoQ"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidXNhbWEiLCJwYXNzd29yZCI6IjEyMzQ1NiJ9LCJpYXQiOjE2OTY1OTQ3NDAsImV4cCI6MTY5NjU5ODM0MH0.FLA7d7WEjjl4dkhoqxi7syY8AIzKIGjj-CtzgE8j62k"
   },
   "imran": {
     "username": "imran",
@@ -102,6 +102,6 @@
   "john": {
     "username": "john",
     "password": "$2b$10$ToQXfcJkfq1MVC7y4hLs7ecwNUUMKi5SfvzVC1LsI3boMlf9MXA/e",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiam9obiIsInBhc3N3b3JkIjoiMTIzNDU2In0sImlhdCI6MTY5NjU3MjAzMiwiZXhwIjoxNjk2NTc1NjMyfQ.bHVhZWycFL5KSIVniEU2HMqUKKbdG0GxPJsuM96k-sc"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiam9obiIsInBhc3N3b3JkIjoiMTIzNDU2In0sImlhdCI6MTY5NjU3NTc4MiwiZXhwIjoxNjk2NTc5MzgyfQ.MiJPvD4C40iHJwYzaeVCTvJJUV2bq1yUvrW_wlpG2eY"
   }
 }

@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
+  Port: process.env.PORT_NUMBER,
   Users: {
     filePath: process.env.USERS_FILE_PATH,
   },
