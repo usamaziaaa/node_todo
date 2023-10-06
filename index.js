@@ -1,5 +1,6 @@
 const express = require("express");
 const userRoutes = require("./routes/user");
+const todoRoutes = require("./routes/todo");
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(express.json());
 
 // Routes
 app.use("/", userRoutes);
+app.use("/todos", todoRoutes);
 
 // Start the Express server
 const PORT = 3000;
