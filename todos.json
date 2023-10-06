@@ -1,0 +1,54 @@
+{
+  "danish": {
+    "todos": [
+      {
+        "title": "Making GET API",
+        "completed": false,
+        "id": "46602304-3eb9-48f9-a223-879121dff7ea"
+      },
+      {
+        "title": "Making POST API",
+        "completed": false,
+        "id": "3641e686-6307-4d7d-b5bb-d8868ce11738"
+      }
+    ]
+  },
+  "usama": {
+    "todos": [
+      {
+        "title": "Making POST API",
+        "completed": false,
+        "id": "f58798b4-b1f2-40ad-b18b-3789d91deded"
+      },
+      {
+        "title": "Learning Node JS",
+        "completed": false,
+        "id": "91ebeab0-9aed-4b23-af30-0bc71fcfd800"
+      },
+      {
+        "title": "Revision of JavaScript",
+        "completed": true,
+        "id": "0e742b09-2f92-419c-ac4b-6bb0deec52b3"
+      },
+      {
+        "title": "Writing Todo Controllers",
+        "completed": false,
+        "id": "8b7330fd-4fe3-46d4-bb69-72f5a58a2d53"
+      }
+    ]
+  },
+  "sagar": {
+    "todos": [
+      {
+        "title": "Eat Fries",
+        "completed": false,
+        "id": "6db8cb2d-4729-4272-a9f3-34afd9adb375"
+      },
+      {
+        "title": "Eat Biscuits",
+        "completed": false,
+        "id": "cfa7c460-1016-4bb1-9270-040f470d86d1"
+      }
+    ]
+  }
+}
