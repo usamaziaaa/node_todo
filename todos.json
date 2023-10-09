@@ -16,11 +16,6 @@
   "usama": {
     "todos": [
       {
-        "title": "Learning Node JS",
-        "completed": false,
-        "id": "91ebeab0-9aed-4b23-af30-0bc71fcfd800"
-      },
-      {
         "title": "Writing Todo Controllers",
         "completed": true,
         "id": "8b7330fd-4fe3-46d4-bb69-72f5a58a2d53"
