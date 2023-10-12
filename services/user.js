@@ -1,7 +1,12 @@
 const bcrypt = require("bcrypt");
-const { loadFile, saveFile } = require("../helpers/helper");
 const jwt = require("jsonwebtoken");
-const config = require('../config/index')
+const {
+  loadFile,
+  saveFile,
+  generateAccessToken,
+  generateRefreshToken,
+} = require("../helpers/helper");
+const config = require("../config/index");
 
 class User {
   static async signup(user) {
@@ -34,16 +39,34 @@ class User {
     try {
       const result = await bcrypt.compare(password, users[username].password);
       if (result) {
-        const token = jwt.sign({user}, config.JWT.key, { expiresIn: config.JWT.expirationTime });
-        users[username].token = token
-        saveFile(config.Users.filePath, users);
-        return { code: 201, message: "Login successful", user: users[username] };
+        const accessToken = generateAccessToken({ user });
+        const refreshToken = generateRefreshToken({ user });
+
+        return {
+          code: 201,
+          message: "Login successful",
+          user: users[username],
+          accessToken,
+          refreshToken,
+        };
       } else {
         return { code: 401, message: "Authentication failed" };
       }
     } catch (error) {
       console.error(error);
       return { code: 500, message: "Bycrpt error" };
+    }
+  }
+
+  static async refreshToken(token) {
+    try {
+      const decoded = jwt.verify(token, config.JWT.refreshTokenSecret);
+      const { user } = decoded;
+      const accessToken = generateAccessToken({ user });
+
+      return { code: 201, accessToken };
+    } catch (error) {
+      return { code: 403, error: "Invalid refresh token" };
     }
   }
 }

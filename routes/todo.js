@@ -4,10 +4,13 @@ const { fetchTodos, addTodo, deleteTodo, updateTodo } = require("../controllers/
 
 const router = express.Router();
 
+// Middleware for authorization
+router.use(verifyToken)
+
 // Routes
-router.get("/", verifyToken, fetchTodos);
-router.delete("/:id", verifyToken, deleteTodo);
-router.put("/:id", verifyToken, updateTodo);
-router.post("/add", verifyToken, addTodo)
+router.get("/", fetchTodos);
+router.delete("/:id", deleteTodo);
+router.put("/:id", updateTodo);
+router.post("/add", addTodo)
 
 module.exports = router;
