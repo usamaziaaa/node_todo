@@ -9,7 +9,7 @@ function verifyToken(req, res, next) {
   }
 
   try {
-    const decoded = jwt.verify(token, config.JWT.key);
+    const decoded = jwt.verify(token, config.JWT.accessTokenSecret);
     req.username = decoded.user.username;
 
     next();

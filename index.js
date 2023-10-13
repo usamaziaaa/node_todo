@@ -1,6 +1,6 @@
 const express = require("express");
-const userRoutes = require("./routes/user");
-const todoRoutes = require("./routes/todo");
+const routes = require("./routes/index");
+const config = require("./config");
 
 const app = express();
 
@@ -8,11 +8,10 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use("/", userRoutes);
-app.use("/todos", todoRoutes);
+app.use("/", routes);
 
 // Start the Express server
-const PORT = 3000;
+const PORT = config.Port
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
