@@ -1,6 +1,4 @@
 const fs = require("fs");
-const jwt = require("jsonwebtoken");
-const config = require("../config");
 
 // Load existing user data or initialize an empty object
 const loadFile = (file) => {
@@ -17,21 +15,4 @@ const saveFile = (file, data) => {
   fs.writeFileSync(file, JSON.stringify(data, null, 2));
 };
 
-const generateAccessToken = (user) => {
-  return jwt.sign(user, config.JWT.accessTokenSecret, {
-    expiresIn: config.JWT.accessTokenExpireTime,
-  });
-};
-
-const generateRefreshToken = (user) => {
-  return jwt.sign(user, config.JWT.refreshTokenSecret, {
-    expiresIn: config.JWT.refreshTokenExpireTime,
-  });
-};
-
-module.exports = {
-  loadFile,
-  saveFile,
-  generateAccessToken,
-  generateRefreshToken,
-};
+module.exports = { loadFile, saveFile };
