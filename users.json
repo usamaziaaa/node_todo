@@ -26,5 +26,25 @@
   "danish": {
     "username": "danish",
     "password": "$2b$10$VCoKTe.HS9S89YRk.B.PRumsdVol9gWbDjIhhMwl6ddxMqmJgdZBe"
+  },
+  "bhabhi": {
+    "username": "bhabhi",
+    "password": "$2b$10$Ch0YKSmERsGqO9jYjcGF3.Z5H59N1uQ7GlkV/5bQLtjnrIxz1u/iu"
+  },
+  "ralph": {
+    "username": "ralph",
+    "password": "$2b$10$S.SERvwlaZAIK8rsBbbmiepRrXnDzFisgVpheewt9c5z5rn2AQsuu"
+  },
+  "umer": {
+    "username": "umer",
+    "password": "$2b$10$WDHrk4Up5TewpyyhF1Bf2.AzDA0hV1gkC61e2vzGvQqxzdpLCDM6G"
+  },
+  "warner": {
+    "username": "warner",
+    "password": "$2b$10$72I8kKFg4X/xtPvZ9OA6deTJWGS/mTWRyWimz4MO85OS3ZkWE98tq"
+  },
+  "bilal": {
+    "username": "bilal",
+    "password": "$2b$10$i5MlC7FVn59Ah.CHT4Vq8O2.3C6F1PepK1KMdShS0fRwtsHt1BXMK"
   }
 }
