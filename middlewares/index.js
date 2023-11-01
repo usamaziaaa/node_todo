@@ -1,11 +1,12 @@
-const jwt = require('jsonwebtoken');
-const config = require('../config');
+const jwt = require("jsonwebtoken");
+const config = require("../config");
+const HttpStatus = require("../constants");
 
 function verifyToken(req, res, next) {
   const token = req.headers.authorization;
 
   if (!token) {
-    return res.status(401).json({ error: 'Unauthorized' });
+    return res.status(HttpStatus.UNAUTHORIZED).json({ error: "Unauthorized" });
   }
 
   try {
@@ -14,7 +15,9 @@ function verifyToken(req, res, next) {
 
     next();
   } catch (error) {
-    return res.status(401).json({ error: 'Token is invalid' });
+    return res
+      .status(HttpStatus.UNAUTHORIZED)
+      .json({ error: "Token is invalid" });
   }
 }
 
